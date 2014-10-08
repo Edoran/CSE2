@@ -15,15 +15,13 @@ public class HelloWorld{
     public static void main(String[] args) {
         
 //  print the statement with box around it
-    System.out.println("########################");
-    System.out.println("########################");
-    System.out.println("#                      #");
-    System.out.println("#  Hello World 2014!!  #");
-    System.out.println("#                      #");
-    System.out.println("########################");
-    System.out.println("########################");
-    System.out.println("test");
+    int x = 2;
+    int y = 17;
+    y *= 3;
+    x = y;
     
+    System.out.print(x+"\n");
+   
     //test
     }
 }

@@ -147,5 +147,6 @@ public class RandomGames{
             System.out.print(Game+" is not one of 'R', 'r', 'C', 'c', 'P', or 'p'");
             }
         }
+        System.out.println(winnings);
     }
 }

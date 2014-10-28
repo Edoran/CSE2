@@ -15,12 +15,14 @@ public class HelloWorld{
     public static void main(String[] args) {
         
 //  print the statement with box around it
-    int x = 2;
-    int y = 17;
-    y *= 3;
-    x = y;
+    String input = "C";
     
-    System.out.print(x+"\n");
+    String xyz = "Cc";
+    String z = String.valueOf(xyz.charAt(0));
+    System.out.println(xyz.charAt(0));
+    System.out.println(!input.equals(xyz.charAt(0)));
+    System.out.println(!input.equals(z));
+    
    
     //test
     }

@@ -6,11 +6,7 @@
 public class MethodCalls{
     public static int addDigit(int x, int y){
         double i = .1;
-        double z = 10;
-        while (z>1 || z<-1){
-            i=i*10;
-            z= (double)x/(double)i;
-        }
+        
         int r = 10*y;
         if (x>0){
              r = (int)i*y+x;
@@ -21,25 +17,22 @@ public class MethodCalls{
         return r;
     }
     public static int join(int x, int y){
-        int r = addDigit(x,y);
         double i = .1;
         double z = 10;
         while (z>1 || z<-1){
             i=i*10;
-            z= (double)x/(double)i;
+            z= (double)y/(double)i;
         }
-        int n = r/i;
-        i = .1;
-        z = 10;
-        while (z>1 || z<-1){
-            i=i*10;
-            z= (double)n/(double)i;
+        int z= 100*x;
+        int a= z+y;
+        if (x<0 && y<0){
+            a=a*-1;
         }
-        int o = y*i
+        return a;
     }
     public static void main(String []  arg){
         int a=784,b=22,c;
-        c=addDigit(a,22);
+        c=addDigit(a,3);
         System.out.println("Add 3 to "+a+" to get "+c);
         c=addDigit(addDigit(c,4),5);
         System.out.println("Add 3, 4, and 5 to "+a+" to get "+c);
